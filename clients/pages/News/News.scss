@@ -1,0 +1,52 @@
+.containerNews {
+  display: grid;
+  grid-template-columns: 1fr 4.5fr;
+  grid-template-rows: 79px 741px 10px;
+}
+
+.itemNewsNav {
+  background-color: rgb(255, 255, 255);
+  grid-row-start: 1;
+  grid-row-end: 4;
+  overflow: auto;
+
+  .namedMarket {
+    font-family: 'Inter', sans-serif;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+}
+
+
+.itemHomeNav::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.itemNews1 {
+  background-color: rgb(247, 247, 247);
+
+  .textTenDay {
+    font-family: 'Inter', sans-serif;
+    margin-top: 30px;
+    margin-left: 24px;
+  }
+}
+
+.itemNews2 {
+  background-color: rgb(247, 247, 247);
+
+  .newsCard {
+    background-color: rgb(255, 255, 255);
+    width: 97.5%;
+    margin-left: 1.5%;
+    height: 741px;
+    display: flex;
+    border-radius: 10px;
+  }
+}
+
+
+.dawd{ 
+  color: rgb(0, 84, 229);
+
+}

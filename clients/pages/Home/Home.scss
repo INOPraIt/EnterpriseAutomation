@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.customTooltip {
+  background-color: rgb(171, 110, 31);
+}
+
+.containerHome {
+  display: grid;
+  grid-template-columns: 1fr 4.5fr;
+  grid-template-rows: 79px 741px 10px;
+}
+
+.itemHomeNav {
+  background-color: rgb(255, 255, 255);
+  grid-row-start: 1;
+  grid-row-end: 4;
+  overflow: auto;
+
+  .namedMarket {
+    font-family: 'Inter', sans-serif;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+}
+
+
+.itemHomeNav::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.itemHome1 {
+  background-color: rgb(247, 247, 247);
+
+  .textTenDay {
+    font-family: 'Inter', sans-serif;
+    margin-top: 30px;
+    margin-left: 24px;
+  }
+}
+
+.itemHome2 {
+  background-color: rgb(247, 247, 247);
+
+  .cardStatistic {
+    background-color: rgb(255, 255, 255);
+    width: 97.5%;
+    margin-left: 1.5%;
+    height: 100px;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+
+    .priceNum {
+      font-family: 'Inter', sans-serif;
+      margin-top: 24px;
+      margin-left: 24px;
+    }
+
+    .textShop {
+      font-family: 'Inter', sans-serif;
+      margin-left: 24px;
+    }
+
+    .priceSale {
+      font-family: 'Inter', sans-serif;
+      margin-left: 220px;
+      margin-top: 24px;
+    }
+
+    .textSale {
+      margin-left: 220px;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .priceClients {
+      font-family: 'Inter', sans-serif;
+      margin-left: 220px;
+      margin-top: 24px;
+    }
+
+    .textClients {
+      font-family: 'Inter', sans-serif;
+      margin-left: 220px;
+      margin-top: 1px;
+    }
+  }
+
+  .charts {
+    background-color: rgb(255, 255, 255);
+    width: 97.5%;
+    margin-left: 1.5%;
+    height: 481px;
+    display: flex;
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+
+
+.dawd{ 
+  color: rgb(0, 84, 229);
+
+}

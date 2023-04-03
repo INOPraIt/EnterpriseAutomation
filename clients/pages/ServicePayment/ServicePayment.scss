@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.customTooltip {
+  background-color: rgb(171, 110, 31);
+}
+
+.containerPayment {
+  display: grid;
+  grid-template-columns: 1fr 4.5fr;
+  grid-template-rows: 79px 741px 10px;
+}
+
+.itemPaymentNav {
+  background-color: rgb(255, 255, 255);
+  grid-row-start: 1;
+  grid-row-end: 4;
+  overflow: auto;
+
+  .namedMarket {
+    font-family: 'Inter', sans-serif;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+}
+
+
+.itemPaymentNav::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.itemPayment1 {
+  background-color: rgb(247, 247, 247);
+
+  .textTenDay {
+    font-family: 'Inter', sans-serif;
+    margin-top: 30px;
+    margin-left: 24px;
+  }
+}
+
+.itemPayment2 {
+  background-color: rgb(247, 247, 247);
+
+  .cardStatistic {
+    background-color: rgb(255, 255, 255);
+    width: 97.5%;
+    margin-left: 1.5%;
+    height: 125px;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+
+    .stardantTarifCard {
+      background-color: #005BFF;
+      color: white;
+      width: 337px;
+      height: 97px;
+      border-radius: 10px;
+      margin-top: 24px;
+      margin-left: 24px;
+
+      .textOneNotion {
+        font-family: 'Inter';
+        font-weight: 600;
+        margin-left: 12px;
+        font-size: 46px;
+        margin-top: 12px;
+      }
+
+      .textPOneNotion {
+        font-family: 'Inter';
+        margin-left: 12px;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+
+    .timeTarifCard {
+      background-color: #04CC00;
+      color: white;
+      width: 337px;
+      height: 97px;
+      border-radius: 10px;
+      margin-top: 24px;
+      margin-left: 80px;
+
+
+      .textOneNotion {
+        font-family: 'Inter';
+        font-weight: 600;
+        margin-left: 12px;
+        font-size: 46px;
+        margin-top: 12px;
+      }
+
+      .textPOneNotion {
+        font-family: 'Inter';
+        margin-left: 12px;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .blockPayment1 {
+    background-color: rgb(255, 255, 255);
+    width: 97.5%;
+    margin-left: 1.5%;
+    height: 481px;
+    border-radius: 0px 0px 10px 10px;
+
+
+    .blockAutoRenewal {
+      display: flex;
+
+      .textAutoRenewal {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #001A34;
+        margin-left: 24px;
+        margin-top: 20px;
+      }
+
+
+      
+    }
+    
+  }
+}
+
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 44px;
+  height: 26px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  margin-left: 12px;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #34C759;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 20px;
+}
+
+// centering
+
+.dawd {
+  color: rgb(0, 84, 229);
+}
+
+.blockFareTerms {
+  background: #F6F7FB;
+  width: 90%;
+  border-radius: 10px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  margin-top: 24px;
+
+  .textFareTerms {
+    margin-left: 24px;
+    color: #001A34;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.blockFareTermsButtons {
+
+  .saleTarif {
+    background: #005BFF;
+    box-shadow: 0px 4px 10px rgba(0, 91, 255, 0.25);
+    border-radius: 8px; 
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    width: 166px;
+    height: 44px;
+    margin-left: 24px;
+    margin-top: 24px;
+  }
+
+  .changeTarif {
+    background: #DEEAFF;
+    border-radius: 8px; 
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #005BFF;
+    width: 166px;
+    height: 44px;
+    margin-left: 12px;
+    margin-top: 24px;
+  }
+}

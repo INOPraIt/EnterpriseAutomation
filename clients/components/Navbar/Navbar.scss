@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+$blue_standart: #001A34;
+
+.navContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2.5fr;
+  grid-template-rows: 100px;
+
+  
+}
+
+.lineNavbar {
+  width: 100%;
+  background: #e6e6e6;
+  border: none;
+  height: 1px;
+}
+
+.itemTitles {
+  background-color: rgb(255, 255, 255);
+
+  .nameMarket {
+    margin-top: 25px;
+    margin-left: 24px;
+    color: $blue_standart;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.itemCurrencies {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+
+  .blockImgOne {
+    display: flex;
+    margin-left: 4%;
+    margin-top: 28px;
+
+    .imgIconAStyle {
+      width: 24px;
+      height: 24px;
+    }
+
+    .textIconFramer {
+      font-family: 'Inter', sans-serif;
+      color: $blue_standart;
+      font-size: 16px;
+      font-weight: 400;
+      margin-left: 10px;
+    }
+  }
+}
+
+.itemItems {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+
+  .blockSupport {
+    display: flex;
+    margin-top: 28px;
+
+    .textItems {
+      font-family: 'Inter', sans-serif;
+      color: $blue_standart;
+      font-size: 16px;
+      font-weight: 400;
+      margin-left: 40px;
+    }
+
+    
+  }
+  .btnOnes {
+    width: 90px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 40px;
+    background: #FFF2F6;
+    color: #F91155;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 18px;
+  }
+}
+
+
